@@ -6,16 +6,306 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Friend Finder: Survey</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="icon" type="image/png" href="../../assets/img/fav-icon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e5483f52e8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+        <script>s
+          function validateForm() {
+          var x = document.forms["friendSurvey"]["name"].value;
+          var y = document.forms["friendSurvey"]["photo"].value;
+          if (x == "" || y == "") {
+            alert("Please fill in all required fields");
+            return false;
+          }
+        }
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <div class="container survey">
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Let's find you a friend!</h3>
+                  
+                  <hr>
+                  <br method="POST" role="form" name="friendSurvey" onsubmit="return validateForm()">
+                    <p class="tell-us">Tell us a little about yourself:</p>
+                    <div class="form-group">
+                      <label for="name"><strong>Name (Required)</strong></label>
+                      <input name="name" id="name" class="form-control" type="text" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="photo"><strong>Photo (Required)</strong></label>
+                      <input name="photo" id="photo" class="form-control" type="text" placeholder="Link to photo" required>
+                    </div>
+
+                    <hr>
+                  
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q0"><strong>Question 1</strong></label>
+                      <p class="card-text">Your mind is always buzzing with unexplored ideas and plans.</p>
+                      <select class="custom-select" id="0">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q1"><strong>Question 2</strong></label>
+                      <p class="card-text">Generally speaking, you rely more on your experience than your imagination.</p>
+                      <select class="custom-select" id="1">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 3</strong></label>
+                      <p class="card-text">You find it easy to stay relaxed and focused even when there is some pressure.</p>
+                      <select class="custom-select" id="2">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+                    
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 4</strong></label>
+                      <p class="card-text">You rarely do something just out of sheer curiosity.</p>
+                      <select class="custom-select" id="3">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 5</strong></label>
+                      <p class="card-text">People can rarely upset you.</p>
+                      <select class="custom-select" id="4">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 6</strong></label>
+                      <p class="card-text">It is often difficult for you to relate to other people’s feelings.</p>
+                      <select class="custom-select" id="5">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 7</strong></label>
+                      <p class="card-text">In a discussion, truth should be more important than people’s sensitivities.</p>
+                      <select class="custom-select" id="6">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 8</strong></label>
+                      <p class="card-text">You rarely get carried away by fantasies and ideas.</p>
+                      <select class="custom-select" id="7">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 9</strong></label>
+                      <p class="card-text">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+                      <select class="custom-select" id="8">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+
+                    <div class="card">
+                    <div class="form-group">
+                      <label for="Q2"><strong>Question 10</strong></label>
+                      <p class="card-text">You feel more energetic after spending time with a group of people.</p>
+                      <select class="custom-select" id="9">
+                        <option selected="">Select an option</option>
+                        <option value="1">Strongly Disagree</option>
+                        <option value="2">Disagree</option>
+                        <option value="3">Neutral</option>
+                        <option value="4">Agree</option>
+                        <option value="5">Strongly Agree</option>
+                      </select>
+                    </div>
+                    </div>
+
+                    </br>
+                    
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                  </form>
+                </div>
+            </div>
+            
+            <div class="info">
+              <ul class="list-group">
+                <a href="api/friends"><li class="list-group-item">API Friends List</li></a>
+            </ul>
+            </div>
+              
+        </div>
+
+        <!-- modal for matched friend-->
+        <!-- Modal -->
+        <div class="modal fade" id="matchFriend" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">We found you a Friend!</h5>
+              </div>
+              <div class="modal-body">
+                <h2 id="match-name"></h2>
+                <img id="match-pic" src="#">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bootstrap requirements-->
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- js for handling button clicks on this page-->
+        <script>
+        $(".submit").on("click",function(){
+          event.preventDefault();
+
+          var scores = [];
+          for (let index = 0; index < 10; index++) {
+            scores.push($("#" +index +" :selected").val());
+            
+          }
+
+          // form validation
+          var valid = true;
+          if ($("#name").val() === ""  ||  $("#photo").val() === ""){
+              valid = false;
+          }else{
+            var scores = [];
+            for (let index = 0; index < 10; index++) {
+              var questVal = $("#" +index +" :selected").val();
+              if (questVal === "empty"){
+                valid = false;
+              }else{
+                scores.push(questVal);
+              }
+            }
+          }
+
+          if (valid === true){
+            var newFriend = {
+              name: $("#name").val().trim(),
+              photo: $("#photo").val().trim(),
+              score: scores
+            };
+            //console.log(newFriend);
+
+            var currentURL = window.location.origin;
+
+            //jquery server call, writes newCharacter obj to server once user clicks alert
+            //show match in modal
+            $.post(currentURL+"/api/friends", newFriend, data =>{
+              $("#match-name").text(data.name);
+              $("#match-pic").attr("src", data.photo);
+              $("#matchFriend").modal("toggle");  
+            });
+          }else{
+            //required field is missing, show alert
+            alert("Please fill in all fields");
+          }
+        });
+        </script>
     </body>
 </html>
